@@ -1,0 +1,15 @@
+body {
+    background-color:blanchedalmond;
+    font-family: Arial;
+    text-align: center;
+}
+
+ol.top5 {
+    display: inline-block;
+    text-align: left;
+}
+
+img {
+    border-radius: 50%;
+    width: 50%;
+}
