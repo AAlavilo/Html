@@ -13,5 +13,24 @@ ol.top5 {
     border-radius: 50%;
     width: 100%;
     height: auto;
-    max-width: 350px;
+    max-width: 310px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f50808; 
 }
