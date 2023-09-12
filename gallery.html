@@ -6,12 +6,7 @@
     
     <title>Gallery</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <style>
-        /* Your CSS rules here */
-        @keyframes scrollShowreel {
-            100% { transform: translateX(-100%); }
-        }
-    </style>
+    
 </head>
 <body>
     <header>
@@ -26,18 +21,24 @@
     </header>
 
     <!-- Gallery content goes here -->
-
-    <div class="gallery-container">
-        <div class="image-gallery">
+    
+    <div class="image-gallery">
+        <div class="gallery-controls">
+            <button id="previousBtn" class="arrow-button">Previous</button>
+        </div>
+        <div class="gallery-item">
             <img src="https://github.com/AAlavilo/Html/blob/main/HTML_kuvia/Halla_lick.png?raw=true" alt="SuperLick">
+            <p>akjhdkjahs</p>
+        </div>
+        <div class="gallery-item">
             <img src="https://github.com/AAlavilo/Html/blob/main/HTML_kuvia/Halla_nose.jpg?raw=true" alt="SuperNose">
-            <!-- add more images like so-->
+            <p>kasjhdkjahs</p>
+            <!-- add more images and paragraphs like so-->
         </div>
-        <div class="showreel-container">
-            <div class="showreel">
-
-            </div>
+        <div class="gallery-controls">
+            <button id="nextBtn" class="arrow-button">Next</button>
         </div>
+        
     </div>
     <script src="JavaScript/script.js"></script>
 </body>

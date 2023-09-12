@@ -1,15 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const showreel = document.querySelector(".showreel");
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    const previousBtn = document.getElementById("previousBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
-    // Clone the images from the gallery into the showreel
-    const galleryImages = document.querySelectorAll(".image-gallery img");
-    galleryImages.forEach((img) => {
-        const clone = img.cloneNode(true);
-        showreel.appendChild(clone);
+    let currentIndex = 0;
+
+    function showItem(index) {
+        galleryItems.forEach((item, i) => {
+            item.style.display = i === index ? "block" : "none";
+        });
+    }
+
+    function updateParagraph(index) {
+        const descriptions = document.querySelectorAll(".gallery-item p");
+        descriptions.forEach((desc, i) => {
+            desc.style.display = i === index ? "block" : "none";
+        });
+    }
+
+    showItem(currentIndex);
+    updateParagraph(currentIndex);
+
+    previousBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        showItem(currentIndex);
+        updateParagraph(currentIndex);
     });
 
-    // Adjust the animation duration based on the number of images
-    const animationDuration = (galleryImages.length * 5) + "s"; // Adjust as needed
-    document.styleSheets[0].insertRule(`@keyframes scrollShowreel { 100% { transform: translateX(-100%); } }`, 0);
-    document.styleSheets[0].cssRules[0].style.animationDuration = animationDuration;
+    nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        showItem(currentIndex);
+        updateParagraph(currentIndex);
+    });
+
 });
