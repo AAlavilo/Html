@@ -8,14 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         showreel.appendChild(clone);
     });
 
-    // Add a spacer div for smooth cycling
-    const spacer = document.createElement("div");
-    spacer.classList.add("spacer");
-    showreel.appendChild(spacer);
-
     // Adjust the animation duration based on the number of images
-    const animationDuration = (galleryImages.length + 1) * 5 + "s"; // Adjust as needed
-    document.styleSheets[0].insertRule(`@keyframes scrollShowreel { 100% { transform: translateX(-${100 / (galleryImages.length + 1)}%); } }`, 0);
+    const animationDuration = (galleryImages.length * 5) + "s"; // Adjust as needed
+    document.styleSheets[0].insertRule(`@keyframes scrollShowreel { 100% { transform: translateX(-100%); } }`, 0);
     document.styleSheets[0].cssRules[0].style.animationDuration = animationDuration;
 });
-
