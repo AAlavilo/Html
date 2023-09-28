@@ -47,7 +47,7 @@ ol.top5 {
 
 /* Previous button styling */
 #previousBtn {
-    background-image: url('https://github.com/AAlavilo/Html/blob/main/HTML_kuvia/Icons/arrow_left.png?raw=true'); 
+    background-image: url('Icons/arrow_left.png'); 
     background-size: 40px; 
     background-repeat: no-repeat;
     height: 60px;
@@ -59,7 +59,7 @@ ol.top5 {
 
 /* Next button styling */
 #nextBtn {
-    background-image: url('https://github.com/AAlavilo/Html/blob/main/HTML_kuvia/Icons/arrow_right.png?raw=true'); 
+    background-image: url("Icons/arrow_right.png"); 
     background-size: 40px;
     background-repeat: no-repeat;
     height: 60px;
