@@ -34,7 +34,7 @@ ol.top5 {
     text-decoration: none;
     color: #f50808; 
 }
-
+/* This is for both arrows */
 .arrow-button {
     background-color: transparent;
     border: none;
@@ -74,13 +74,13 @@ ol.top5 {
     background-color: #ddd;
 }
 
-/*
+
 .gallery-controls::after {
     content: "";
     display: table;
     clear: both;
 }
-*/
+
 
 .image-gallery {
     display: flex;
