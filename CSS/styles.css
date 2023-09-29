@@ -84,7 +84,7 @@ ol.top5 {
 
 .image-gallery {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -98,6 +98,12 @@ ol.top5 {
     width: auto;
     height: auto;
     scroll-snap-align: start;
+}
+
+gallery-item p {
+    max-width: 400px;
+    margin: 0 auto;
+    
 }
 
 
