@@ -57,8 +57,30 @@ ol.top5 {
     float: left;
 }
 
+#previousBtn2 {
+    background-image: url('Icons/arrow_left.png'); 
+    background-size: 40px; 
+    background-repeat: no-repeat;
+    height: 60px;
+    background-position: calc(100% - 10px) center; 
+    padding-left: 40px; 
+    padding-right: 20px;
+    float: left;
+}
+
 /* Next button styling */
 #nextBtn {
+    background-image: url("Icons/arrow_right.png"); 
+    background-size: 40px;
+    background-repeat: no-repeat;
+    height: 60px;
+    background-position: calc(100% - 10px) center; 
+    padding-right: 40px;
+    padding-left: 20px; 
+    float: right;
+}
+
+#nextBtn2 {
     background-image: url("Icons/arrow_right.png"); 
     background-size: 40px;
     background-repeat: no-repeat;

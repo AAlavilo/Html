@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const galleryItems = document.querySelectorAll(".gallery-item");
     const previousBtn = document.getElementById("previousBtn");
     const nextBtn = document.getElementById("nextBtn");
+    const previousBtn2 = document.getElementById("previousBtn2");
+    const nextBtn2 = document.getElementById("nextBtn2");
 
     let currentIndex = 0;
 
@@ -28,6 +30,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        showItem(currentIndex);
+        updateParagraph(currentIndex);
+    });
+
+    previousBtn2.addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        showItem(currentIndex);
+        updateParagraph(currentIndex);
+    });
+
+    nextBtn2.addEventListener("click", function () {
         currentIndex = (currentIndex + 1) % galleryItems.length;
         showItem(currentIndex);
         updateParagraph(currentIndex);
