@@ -100,7 +100,7 @@ ol.top5 {
     scroll-snap-align: start;
 }
 
-gallery-item p {
+.gallery-item p {
     max-width: 400px;
     margin: 0 auto;
     
