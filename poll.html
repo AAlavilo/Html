@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Poll</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,7 +21,23 @@
         </nav>
     </header>
 
+    <h2></h2>
+
     <!-- Poll content goes here -->
 
+    <form id="catPollForm">
+        <h2>What's your favorite thing about my cat?</h2>
+        <input type="radio" name="catOption" value="Cuteness"> Cuteness<br>
+        <input type="radio" name="catOption" value="Playfulness"> Playfulness<br>
+        <input type="radio" name="catOption" value="Fluffiness"> Fluffiness<br>
+        <input type="radio" name="catOption" value="Other"> Other (Please specify)
+        <br>
+        <label for="otherOption">If 'Other,' please specify:</label>
+        <input type="text" id="otherOption" name="otherOption">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    
 </body>
+
 </html>
