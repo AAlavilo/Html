@@ -111,6 +111,7 @@ ol.top5 {
     align-items: center;
     overflow: hidden;
     scroll-snap-type: x mandatory;
+    margin-top: 60px;
 }
 
 .image-gallery img { 
@@ -129,8 +130,76 @@ ol.top5 {
 }
 
 
+
+.skills{
+    border: 3px solid black;
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skill {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    width: 60px;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+.skill:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    height: 100vh; 
+    margin: 0;
+
+}
+
+.profilepic {
+    max-width: 250px;
+    max-height: auto;
+    border-radius: 100%;
+    float:left;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+.portfolio-body > section {
+    grid-area: content;
+    padding: 20px;
+}
+
+.AboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutmetext {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
 @media (max-width: 768px) {
     .image-gallery {
+        flex-direction: column;
+    }
+
+    .portfolio {
         flex-direction: column;
     }
 }
