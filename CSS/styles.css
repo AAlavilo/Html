@@ -1,8 +1,17 @@
+
+
 body {
     background-color:blanchedalmond;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+header {
+    background-color:black; 
+    
+}
+
+
 
 ol.top5 {
     display: inline-block;
@@ -14,6 +23,7 @@ ol.top5 {
     width: 100%;
     height: auto;
     max-width: 310px;
+    
 }
 
 .nav-links {
@@ -32,7 +42,7 @@ ol.top5 {
 
 .nav-links a {
     text-decoration: none;
-    color: #f50808; 
+    color: orange; 
 }
 /* This is for both arrows */
 .arrow-button {
@@ -194,12 +204,39 @@ ol.top5 {
     max-width: 300px;
 }
 
+footer {
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.myLinks {
+    display: inline-block;
+    
+    
+}
+
+.FooterText {
+    display: inline-block;
+    margin-right: 10px;
+    color: orange;
+    font-size: 30px;
+    
+}
+
+.theLink {
+    display: inline-block;
+    width: 40px;
+    background-color: aliceblue;
+    margin-top: 4px;
+}
+    
+
 @media (max-width: 768px) {
     .image-gallery {
         flex-direction: column;
     }
 
-    .portfolio {
+    .AboutMe {
         flex-direction: column;
     }
 }
