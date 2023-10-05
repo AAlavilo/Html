@@ -1,21 +1,38 @@
-
+*{margin:0;}
 
 body {
     background-color:blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 6px solid black;
+}
+
+main {
+    flex-grow: 1;
 }
 
 header {
     background-color:black; 
-    
+    font-size: 20px;
+    height: 30px;
+    padding-top: 5px;
+    margin-bottom: 5px;
 }
-
-
 
 ol.top5 {
     display: inline-block;
     text-align: left;
+}
+
+h1 {
+    margin-top: 5px;
+}
+
+.subTitle {
+    margin-bottom: 15px;
 }
 
 .image-size {
@@ -23,7 +40,12 @@ ol.top5 {
     width: 100%;
     height: auto;
     max-width: 310px;
-    
+    margin-bottom: 15px;
+}
+
+.likeCats {
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .nav-links {
@@ -44,6 +66,26 @@ ol.top5 {
     text-decoration: none;
     color: orange; 
 }
+
+.Properties {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Properties tr {
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
 /* This is for both arrows */
 .arrow-button {
     background-color: transparent;
@@ -206,8 +248,8 @@ ol.top5 {
 
 footer {
     background-color: rgb(0, 0, 0);
-    
-}
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
 .myLinks {
     display: inline-block;
@@ -220,7 +262,7 @@ footer {
     margin-right: 10px;
     color: orange;
     font-size: 30px;
-    
+    padding-bottom: 5px;
 }
 
 .theLink {

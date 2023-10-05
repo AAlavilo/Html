@@ -1,4 +1,14 @@
+function myCat(name, age, breed) {
+    this.name = name;
+    this.age = age,
+    this.breed = breed;
+}
 
+const Halla = {Name:"Halla", Age:3, Breed:"Mixed", cutenessScale:"Through the roof!"};
+document.getElementById("nameCell").textContent = Halla.Name;
+document.getElementById("ageCell").textContent = Halla.Age;
+document.getElementById("breedCell").textContent = Halla.Breed;
+document.getElementById("cuteCell").textContent = Halla.cutenessScale;
 
 document.addEventListener("DOMContentLoaded", function () {
     const galleryItems = document.querySelectorAll(".gallery-item");
