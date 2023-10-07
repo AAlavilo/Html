@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poll</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
@@ -15,29 +15,90 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="poll.html">Poll</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <h2>Halla Quiz</h2>
+        <form id="quiz">
+            <div class="question">
+                <p>1. What is Halla's favourite sleeping spot?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> A) Backpack
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b"> B) Couch
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c"> C) Bed
+                </label><br>
+            </div><br>
+            
+            <div class="question">
+                <p>2. How many years old is Halla?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> A) 1
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b"> B) 3
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c"> C) 5
+                </label><br>
+            </div><br>
 
-    <h2></h2>
+            <div class="question">
+                <p>3. Where does Halla like to be petted the most?</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> A) Behind her ear
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b"> B) Under her chin
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c"> C) Her cheeks
+                </label><br>
+            </div><br>
+            
+            <button type="submit" id="submitQuiz">Submit</button>
+        </form><br>
+        
+        <div id="results">
+            <p>Your quiz results will appear here.</p>
+        </div><br>
 
-    <!-- Poll content goes here -->
+        
 
-    <form id="catPollForm">
-        <h2>What's your favorite thing about my cat?</h2>
-        <input type="radio" name="catOption" value="Cuteness"> Cuteness<br>
-        <input type="radio" name="catOption" value="Playfulness"> Playfulness<br>
-        <input type="radio" name="catOption" value="Fluffiness"> Fluffiness<br>
-        <input type="radio" name="catOption" value="Other"> Other (Please specify)
-        <br>
-        <label for="otherOption">If 'Other,' please specify:</label>
-        <input type="text" id="otherOption" name="otherOption">
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+
+        <form id="catPollForm">
+            <h2>What's your favorite thing about my cat?</h2>
+            <input type="radio" name="catOption" value="Cuteness"> Cuteness<br>
+            <input type="radio" name="catOption" value="Playfulness"> Playfulness<br>
+            <input type="radio" name="catOption" value="Fluffiness"> Fluffiness<br>
+            <input type="radio" name="catOption" value="Other"> Other (Please specify)
+            <br>
+            <label for="otherOption">If 'Other,' please specify:</label>
+            <input type="text" id="otherOption" name="otherOption">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Footer information or copyright notice -->
+        <div class="myLinks">
+            <p class="FooterText">Links to my stuff:</p>
+            <a href="https://github.com/AAlavilo" class="theLink"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+                    title="GitHub"></a>
+            <a href="https://www.linkedin.com/in/antti-alavilo-173071258/" class="theLink"> <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn" title="Linkedin"></a>
+
+        </div>
+    </footer>
     <script src="JavaScript/script.js"></script>
 </body>
 
