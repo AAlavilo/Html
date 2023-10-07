@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             countdownTime--;
             if (countdownTime <= 0) {
                 clearInterval(timerInterval);
-                
+
                 showResults();
             } else {
                 // Update the timer display
@@ -73,12 +73,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-    
+
     function stopTimer() {
         clearInterval(timerInterval);
     }
 
-    
+
     function showResults() {
         // Check the answers and display results
         const q1Answer = document.querySelector('input[name="q1"]:checked');
@@ -130,23 +130,26 @@ document.addEventListener("DOMContentLoaded", function () {
     startTimer();
 
     submitButton.addEventListener("click", function (e) {
-        e.preventDefault(); 
-        showResults(); 
+        e.preventDefault();
+        showResults();
     });
 
 });
 
 
 document.addEventListener("DOMContentLoaded", function () {
-function myCat(name, age, breed) {
-    this.name = name;
-    this.age = age,
-        this.breed = breed;
-}
 
-const Halla = { Name: "Halla", Age: 3, Breed: "Mixed", cutenessScale: "Through the roof!" };
-document.getElementById("nameCell").textContent = Halla.Name;
-document.getElementById("ageCell").textContent = Halla.Age;
-document.getElementById("breedCell").textContent = Halla.Breed;
-document.getElementById("cuteCell").textContent = Halla.cutenessScale;
+    if (window.location.pathname.endsWith("/about.html")) {
+        function myCat(name, age, breed) {
+            this.name = name;
+            this.age = age,
+                this.breed = breed;
+        }
+
+        const Halla = { Name: "Halla", Age: 3, Breed: "Mixed", cutenessScale: "Through the roof!" };
+        document.getElementById("nameCell").textContent = Halla.Name;
+        document.getElementById("ageCell").textContent = Halla.Age;
+        document.getElementById("breedCell").textContent = Halla.Breed;
+        document.getElementById("cuteCell").textContent = Halla.cutenessScale;
+    }
 });
