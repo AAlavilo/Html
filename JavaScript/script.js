@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             countdownTime--;
             if (countdownTime <= 0) {
                 clearInterval(timerInterval);
-                // Time is up, handle the end of the quiz here
+                
                 showResults();
             } else {
                 // Update the timer display
@@ -73,12 +73,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-    // Function to stop the timer
+    
     function stopTimer() {
         clearInterval(timerInterval);
     }
 
-    // Function to display quiz results
+    
     function showResults() {
         // Check the answers and display results
         const q1Answer = document.querySelector('input[name="q1"]:checked');
@@ -136,6 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
 function myCat(name, age, breed) {
     this.name = name;
     this.age = age,
@@ -147,3 +149,4 @@ document.getElementById("nameCell").textContent = Halla.Name;
 document.getElementById("ageCell").textContent = Halla.Age;
 document.getElementById("breedCell").textContent = Halla.Breed;
 document.getElementById("cuteCell").textContent = Halla.cutenessScale;
+});
