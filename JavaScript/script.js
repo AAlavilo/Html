@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const resultsDiv = document.getElementById("results");
         const quizForm = document.getElementById("quiz");
 
-        // Set the countdown time in seconds
+        // setting the time limit for the quiz
         let countdownTime = 15;
         let timerInterval;
 
-        // Function to start the countdown timer
+        
         function startTimer() {
             timerInterval = setInterval(function () {
                 countdownTime--;
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     showResults();
                 } else {
-                    // Update the timer display
+                    // updating the display of the timer
                     resultsDiv.innerHTML = `Time remaining: ${countdownTime} seconds`;
                 }
             }, 1000);
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         function showResults() {
-            // Check the answers and display results
+            
             const q1Answer = document.querySelector('input[name="q1"]:checked');
             const q2Answer = document.querySelector('input[name="q2"]:checked');
             const q3Answer = document.querySelector('input[name="q3"]:checked');
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (q3Value === "a") score++;
 
                 resultsDiv.innerHTML = `Your score: ${score} out of 3`;
-                // Stop the timer
+                
                 stopTimer();
                 const resetButton = document.createElement("button");
                 resetButton.textContent = "Restart Quiz";
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
 
-        // Start the timer when the page loads
+        // staring the timer when the page loads
         startTimer();
 
         submitButton.addEventListener("click", function (e) {
@@ -153,5 +153,40 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("ageCell").textContent = Halla.Age;
         document.getElementById("breedCell").textContent = Halla.Breed;
         document.getElementById("cuteCell").textContent = Halla.cutenessScale;
+
+        
+
+        fetch("gallery.html")
+        .then(response => response.text())
+        .then(data => {
+            // making a temporary container
+            const tempContainer = document.createElement("div");
+            tempContainer.innerHTML = data;
+
+            // finding the right image
+            const imageElement = tempContainer.querySelector('img[src="HTML_kuvia/soAsleep_Halla2.jpg"][alt="VerySleepy"]');
+
+            if (imageElement) {
+                // cloning the image
+                const clonedImage = imageElement.cloneNode(true);
+
+                // apllying the css here for training
+                clonedImage.style.maxWidth = "20%"; 
+                clonedImage.style.maxHeight = "20%"; 
+                
+                const imageContainer = document.getElementById("imageFromGallery");
+                imageContainer.appendChild(clonedImage);
+            } else {
+                console.error("Image not found in gallery.html");
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching image:", error);
+        });
+
+    
     }
+
+    
 });
+

@@ -81,11 +81,7 @@ JavaScript Basics (25%)
         In the script.js you can find event listeners for all the arrow keys used in the gallery.html file.
 
     3/5:
-
     Use of arrays, objects, and functions.
-    Learn about Arrays
-    Learn about Objects
-    Learn about Functions
 
         Once again in the gallery.html there are lots of pictures and paragraphs, that I have put into an array in the script.js.
 
@@ -101,29 +97,32 @@ JavaScript Basics (25%)
         
 
     5/5:
-
     Consistent use of Object-Oriented JavaScript principles.
-    Learn about Constructors
+    
+
 
 Asynchronous Operations (25%)
 
     1/5:
-
     Use of timers.
-    Learn about Timers
+    
+        Timer is being used in the quiz.html. It starts when the page is loaded and runs down to 0. You can push the restart button to reset the both quiz and the timer.
+
     2/5:
-
     Successful implementation of an AJAX call or Fetch.
-    Learn about AJAX
-    Learn about Fetch
-    Learn about Fetch more..
+    
+        A fetch is being done in the about.html page. The code can be seen in script.js starting from the line 157. There we fetch a specific picture from the gallery.html.
+
     3/5:
-
     Data from the asynchronous call is displayed on the webpage.
+    
+        The same as the above. I make an asynchronous call to gallery.html to fetch the content, process the said content and update the current (about.html) page accordingly. Note that this is not a good way to handle it but it's for the practice.
+    
     4/5:
-
     Error handling is implemented (for failed API calls, etc.).
-    Learn about JS Error Handling
+    
+        script.js lines 183-185. Here I used the .catch()-method to handle the errors that may occur during the execution of a promise.
+
     5/5:
 
     Effective use of asynchronous data to enhance user experience (like filtering, sorting).

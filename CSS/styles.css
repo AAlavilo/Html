@@ -68,8 +68,9 @@ h1 {
 }
 
 .Properties {
+    
     border: 3px solid black;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -84,6 +85,12 @@ h1 {
     text-align: center;
     
     margin: 0 auto;
+}
+
+#imageFromGallery {
+    margin-top: 50px;
+    text-align: center;
+    
 }
 
 /* This is for both arrows */
