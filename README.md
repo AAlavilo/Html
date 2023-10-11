@@ -94,8 +94,7 @@ JavaScript Basics (25%)
     
         You've already seen looping through data in the gallery.html. In the script we use ForEach method to loop through the data.
 
-        
-
+    
     5/5:
     Consistent use of Object-Oriented JavaScript principles.
     

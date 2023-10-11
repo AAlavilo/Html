@@ -254,6 +254,10 @@ h1 {
     max-width: 300px;
 }
 
+#projects {
+    margin-bottom: 10px;
+}
+
 footer {
     background-color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -278,8 +282,10 @@ footer {
     width: 40px;
     background-color: aliceblue;
     margin-top: 4px;
-}
     
+}
+
+
 
 @media (max-width: 768px) {
     .image-gallery {
