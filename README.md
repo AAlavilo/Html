@@ -11,19 +11,19 @@ HTML (25%)
     2/5:
     HTML structure with clear content differentiation (headings, paragraphs, lists).
 
-        This can also be found in any html.file. Refer to the index.html again.
+        This can also be found in any html file. Refer to the index.html again.
 
     3/5:
     Use of forms, links, and media.
     
         Form can be found in the quiz.html
-        Links can be seen in portfolio.html
+        Links can be seen in the footer of the portfolio.html
         Media you can find on gallery.html
 
     4/5:
     Tables are effectively used.
     
-        You can find tables in portfolio.html. Refer to the skills or project sections.
+        You can find tables in portfolio.html. Refer to the skills section.
 
 
     5/5:
@@ -47,7 +47,7 @@ CSS (25%)
     2/5:
     Use of classes and IDs to style specific elements.
 
-        Classes can be found in any html.file. IDs can be found all over the place but look at the portfolio.html and find the "About" section and there is an ID right there (also a few classes too).
+        Classes can be found in any html file. IDs can be found all over the place but look at the portfolio.html and find the "About" section starting from line 26 and there is an ID right there (also a few classes too).
 
 
     3/5:
@@ -61,51 +61,51 @@ CSS (25%)
     Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)
 
         portfolio.html has the Grid layout. Refer to the styles.css on the line 210.
-        The <body> tag on line 3 of the styles.css has been made a flex-container.
+        The <body> tag on line 3 of the styles.css has been made a flex-container. Float property has been used in the gallery.html for the buttons for example. Refer to styles.css starting on lines 106.
 
     5/5:
     Styling demonstrates a strong grasp of layout principles, aesthetics, and user experience.
 
-        There is a lot of styling. If you want to look at something specific, look at the gallery.html. The styling for the stuff inside can be found in the styles.css on the lines 89-182. 
+        There is a lot of styling. If you want to look at something specific, look at the portfolio.html. The styling for the stuff inside can be found in the styles.css on the lines 184-286. 
 
 JavaScript Basics (25%)
 
     1/5:
     Simple interactions (like alerts on button click).
     
-        An alert has been placed at the bottom of the index.html. It checks if you have visited before and if you haven't it will give you a welcome message in a pop-up window for the first time you visit the page.
+        An alert has been placed at the bottom of the index.html. It checks if you have visited before and if you haven't it will give you a welcome message in a pop-up window for the first time you visit the page. In gallery.html you are able to click on the arrow keys. The functionality can be seen in script.js on the lines 1-51.
 
     2/5:
     Multiple event listeners and basic DOM manipulations.
     
-        In the script.js you can find event listeners for all the arrow keys used in the gallery.html file.
+        In the script.js you can find quite a few event listeners and basic DOM manipulation. For example in the portfolio page I first hide all the pictures on my projects and then show them one by one after a few seconds of delay.
 
     3/5:
     Use of arrays, objects, and functions.
 
-        Once again in the gallery.html there are lots of pictures and paragraphs, that I have put into an array in the script.js.
+        In the gallery.html and portfolio.html there are lots of pictures and paragraphs, that I have put into an array in the script.js.
 
-        In the about.html page you can find a table containing information about my cat. In the bottom of the script.js you will see that I've made an object of my cat and in the about.html I call the right value using a specific id.
+        In the about.html page you can find a table containing information about my cat. In the script.js you will see that I've made an object of my cat on the line 151 and in the about.html I call the right value using a specific id.
 
-        The alert you saw before has a function I described earlier. Also in the gallery.html I have functions that check which picture and paragraph will be shown. Refer to the script.js on the lines 10-21 for the example.
+        Also in the gallery.html I have functions that check which picture and paragraph will be shown. Refer to the script.js on the lines 10-21 for the example.
 
     4/5:
     Advanced logic, looping through data, and dynamic DOM updates.
     
-        You've already seen looping through data in the gallery.html. In the script we use ForEach method to loop through the data.
+        You've already seen looping through data in the gallery.html. In the script we use ForEach method to loop through the data. On the lines 217-241 I loop through another set of pictures using a timer.
 
     
     5/5:
     Consistent use of Object-Oriented JavaScript principles.
     
-
+        At this point in time I couldn't think of how to include this in my project.
 
 Asynchronous Operations (25%)
 
     1/5:
     Use of timers.
     
-        Timer is being used in the quiz.html. It starts when the page is loaded and runs down to 0. You can push the restart button to reset the both quiz and the timer.
+        Timer is being used in the quiz.html. It starts when the page is loaded and runs down to 0. You can push the restart button to reset the both quiz and the timer. There is also a timer on the portfolio.html on the project section. You can see the code for it in script.js line 235.
 
     2/5:
     Successful implementation of an AJAX call or Fetch.
@@ -120,9 +120,10 @@ Asynchronous Operations (25%)
     4/5:
     Error handling is implemented (for failed API calls, etc.).
     
-        script.js lines 183-185. Here I used the .catch()-method to handle the errors that may occur during the execution of a promise.
+        script.js lines 181-183. Here I used the .catch()-method to handle the errors that may occur during the execution of the fetch process.
 
     5/5:
 
     Effective use of asynchronous data to enhance user experience (like filtering, sorting).
 
+        There is not much to say here. I use the asynchronous data fetching by fetching an image from the gallery and displaying it on the about.html page. It enchances the user experience by allowing dynamic content to be loaded without requiring a full page reload.

@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let countdownTime = 15;
         let timerInterval;
 
-        
+
         function startTimer() {
             timerInterval = setInterval(function () {
                 countdownTime--;
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         function showResults() {
-            
+
             const q1Answer = document.querySelector('input[name="q1"]:checked');
             const q2Answer = document.querySelector('input[name="q2"]:checked');
             const q3Answer = document.querySelector('input[name="q3"]:checked');
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (q3Value === "a") score++;
 
                 resultsDiv.innerHTML = `Your score: ${score} out of 3`;
-                
+
                 stopTimer();
                 const resetButton = document.createElement("button");
                 resetButton.textContent = "Restart Quiz";
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function myCat(name, age, breed) {
             this.name = name;
             this.age = age,
-                this.breed = breed;
+            this.breed = breed;
         }
 
         const Halla = { Name: "Halla", Age: 3, Breed: "Mixed", cutenessScale: "Through the roof!" };
@@ -154,39 +154,88 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("breedCell").textContent = Halla.Breed;
         document.getElementById("cuteCell").textContent = Halla.cutenessScale;
 
-        
-
         fetch("gallery.html")
-        .then(response => response.text())
-        .then(data => {
-            // making a temporary container
-            const tempContainer = document.createElement("div");
-            tempContainer.innerHTML = data;
+            .then(response => response.text())
+            .then(data => {
+                // making a temporary container
+                const tempContainer = document.createElement("div");
+                tempContainer.innerHTML = data;
 
-            // finding the right image
-            const imageElement = tempContainer.querySelector('img[src="HTML_kuvia/soAsleep_Halla2.jpg"][alt="VerySleepy"]');
+                // finding the right image
+                const imageElement = tempContainer.querySelector('img[src="HTML_kuvia/soAsleep_Halla2.jpg"][alt="VerySleepy"]');
 
-            if (imageElement) {
-                // cloning the image
-                const clonedImage = imageElement.cloneNode(true);
+                if (imageElement) {
+                    // cloning the image
+                    const clonedImage = imageElement.cloneNode(true);
 
-                // apllying the css here for training
-                clonedImage.style.maxWidth = "20%"; 
-                clonedImage.style.maxHeight = "20%"; 
-                
-                const imageContainer = document.getElementById("imageFromGallery");
-                imageContainer.appendChild(clonedImage);
-            } else {
-                console.error("Image not found in gallery.html");
-            }
-        })
-        .catch(error => {
-            console.error("Error fetching image:", error);
-        });
+                    // applying the css here for training
+                    clonedImage.style.maxWidth = "80%";
+                    clonedImage.style.maxHeight = "80%"
 
-    
+                    const imageContainer = document.getElementById("imageFromGallery");
+                    imageContainer.appendChild(clonedImage);
+                } else {
+                    console.error("Image not found in gallery.html");
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching image:", error);
+            });
+
+
     }
 
-    
+
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.pathname.endsWith("/portfolio.html")) {
+        var slideIndex = 0;
+
+        function showSlides() {
+            var i;
+            var slides = document.querySelectorAll(".VileWoodPic");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 3000); // You can adjust the time to show the next picture here
+        }
+
+        // Start the slideshow
+        showSlides();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.pathname.endsWith("/portfolio.html")) {
+        var slideIndex = 0;
+
+        function showSlides() {
+            var i;
+            var slides = document.querySelectorAll(".ATMPic");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 6000); // You can adjust the time to show the next picture here
+        }
+
+        // Start the slideshow
+        showSlides();
+    }
+});

@@ -17,9 +17,7 @@ main {
 header {
     background-color:black; 
     font-size: 20px;
-    height: 30px;
-    padding-top: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 ol.top5 {
@@ -170,7 +168,7 @@ h1 {
     align-items: center;
     overflow: hidden;
     scroll-snap-type: x mandatory;
-    margin-top: 60px;
+    margin-top: 6px;
 }
 
 .image-gallery img { 
@@ -181,6 +179,31 @@ h1 {
     height: auto;
     scroll-snap-align: start;
     
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    margin-top: 6px;
+}
+
+.portfolio-gallery img { 
+    border-radius: 10%;
+    max-height: 400px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    scroll-snap-align: start;
+    
+}
+
+.portfolio-gallery p {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .gallery-item p {
@@ -223,9 +246,9 @@ h1 {
         "header"
         "content"
         "footer";
-    height: 100vh; 
+     
     margin: 0;
-
+    box-sizing: border-box;
 }
 
 .profilepic {
@@ -237,9 +260,12 @@ h1 {
     padding-top: 20px;
     margin-right: 20px;
 }
-.portfolio-body > section {
+.portfolio-body {
     grid-area: content;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .AboutMe {
@@ -247,6 +273,7 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .aboutmetext {
@@ -286,7 +313,6 @@ footer {
 }
 
 
-
 @media (max-width: 768px) {
     .image-gallery {
         flex-direction: column;
@@ -295,4 +321,6 @@ footer {
     .AboutMe {
         flex-direction: column;
     }
+
+    
 }
