@@ -169,8 +169,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     const clonedImage = imageElement.cloneNode(true);
 
                     // applying the css here for training
-                    clonedImage.style.maxWidth = "80%";
-                    clonedImage.style.maxHeight = "80%"
+                    clonedImage.style.maxWidth = "65%";
+                    clonedImage.style.maxHeight = "65%"
 
                     const imageContainer = document.getElementById("imageFromGallery");
                     imageContainer.appendChild(clonedImage);
